@@ -1,8 +1,10 @@
 const puppeteer = require('puppeteer');
 const dayjs = require('dayjs')
+const dotenv = require('dotenv')
+dotenv.config();
 const twilio = require('twilio');
+const client = new twilio(process.env.TWILIO_SID, process.env.TWILIO_TOKEN);
 
-const client = new twilio('ACeb3529e22f01ae19b44c8f2f526036af', 'b4f3ea0a12b5a4097b6d8b4e467437f3');
 const oaklandHospitals = ['Highland and Fairmont Hospitals'];
 
 const signInPage = async () => {

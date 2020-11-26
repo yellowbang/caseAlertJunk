@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "dayjs": "^1.9.6",
+    "dotenv": "^8.2.0",
     "puppeteer": "^5.5.0",
     "twilio": "^3.52.0"
   },
